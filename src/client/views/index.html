@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FEND Capstone - Travel App</title>
+        <link rel="shortcut icon" type="image/jpg" href="../icons/airplane.ico"/>
+    </head>
+    <body>
+        <header>
+            <div class="logo-text">
+               <a href="#"> Travel App <i class="fas fa-search"></i> </a>
+            </div>
+        </header>
+        <main>
+            <section class="subtitlerow">
+                <!-- just a spacer for a nice background picture -->
+            </section>
+            <section class="search">
+                <!-- <form class="search-form" onsubmit="return Client.handleSubmit(event)"> -->
+                <form class="search-form" onsubmit="Client.formHandler(event)">
+                    <label class="search-form__destination" for="destination"
+                        >Destination
+                        <input
+                            id="destination"
+                            type="text"
+                            name="destination"
+                            value=""
+                            placeholder="City or Country"
+                            required
+                        />
+                    </label>
+                    <label
+                        class="search-form__departure-date"
+                        for="departureDate"
+                        >Departure Date
+                        <input
+                            id="departureDate"
+                            type="date"
+                            name="departureDate"
+                            required
+                        />
+                    </label>
+                    <button class="btn search-form__btn-search" type="submit">
+                        Search <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </section>
+            <section class="results">
+                <div id="travelInfo"></div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; LookHereAsWell <a href="http://extraview.nl" target="_blank">Extraview</a></p>
+        </footer>
+        <script>
+            // Handle service worker
+            if ('serviceWorker' in navigator) {
+			    // add listener to 'load' event
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+
+            //and cookies. Although set, this doesnt resolve the Chrome warnings about cross-site cookies. What to do?
+            document.cookie = "SameSite=None";
+            document.cookie = "Secure";
+            // alert( document.cookie );
+        </script>
+    </body>
+</html>
