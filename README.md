@@ -45,7 +45,7 @@ npm start
 Open a browser at http://localhost:8080/
 
 ## Author
-Made by Duco Lebens contact info on my Github page
+Made by Duco Lebens. Contact info on my Github page
 
 ## Credits
 Code used found in Udacity's front-end webdevelopers course material and
