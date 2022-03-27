@@ -6,7 +6,8 @@ This project aims to give you the opportunity to put all of the skills you have 
 
 ## How to use / installation steps
 Make sure node and npm are installed from the terminal.
-I've used node version 14.17.5 and npm version 8.3.0
+
+## ! - I've used node version 14.17.5 and npm version 8.3.0
 ```
 node -v
 npm -v
