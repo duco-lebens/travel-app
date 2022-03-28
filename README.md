@@ -5,7 +5,9 @@ Project number five, and last, in the front end developers course from Udacity.
 This project aims to give you the opportunity to put all of the skills you have learned into one project to build your own custom travel app. Due to the nature of this course, it is very JavaScript heavy, but it is still expected you create clean and appealing HTML/CSS. You will also be targeting the DOM, working with objects, and retrieving data from 3 APIs in which one of those is reliant on another to work. Finally, this is all going to be done in a Webpack environment, using an express server, and wrapped up with service workers.
 
 ## How to use / installation steps
-Make sure Node and npm are installed from the terminal.
+Make sure node and npm are installed from the terminal.
+
+## ! - I've used node version 14.17.5 and npm version 8.3.0
 ```
 node -v
 npm -v
